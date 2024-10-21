@@ -326,49 +326,138 @@ footer ul li a.active {
     margin-right: 1200px; 
 }
 
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    .navbar {
-        display: flex;
+
+main {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d00;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    background-color: #004400;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #004d00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
         flex-direction: column;
+        text-align: center;
     }
 
-    .content {
+    nav ul {
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-    
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    
-    .extra-div {
-        display: block;
-        width: 20px;
-        height: 20px;
-        background-color: red; 
+    .images img {
+        width: 80%;
+        margin: 10px 0;
     }
 }
 
 
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 90%;
-        padding: 20px;
+@media screen and (max-width: 768px) {
+    .section-title h2 {
+        font-size: 1.5rem;
     }
 
-    .navbar {
-        flex-direction: row;
+    .images img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        display: block;
+        margin: 10px auto;
     }
 
-    .content {
-        flex-direction: row;
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        background-color: #004d00;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .images img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 15px;
     }
 }
