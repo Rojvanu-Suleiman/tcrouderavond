@@ -325,3 +325,50 @@ footer ul li a.active {
 .section-title h2:first-child {
     margin-right: 1200px; 
 }
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    
+    .extra-div {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: red; 
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .content {
+        flex-direction: row;
+    }
+}
